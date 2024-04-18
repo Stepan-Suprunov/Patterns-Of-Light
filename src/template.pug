@@ -1,33 +1,17 @@
-doctype html
-html(lang="ru")
-    head
-        meta(
-            name="viewport",
-            content="width=device-width",
-            initial-scale="1.0"
-            )
-        meta(charset="utf-8")
-        title Main
-
-    body
-        header
-            include pug/header
-
-        main
-            section
-                include pug/top-image
-
-            section
-                include pug/discription-text
-
-            section
-                include pug/cards
-
-            section
-                include pug/price-button
-
-            section
-                include pug/form
-                
-        footer 
-            include pug/footer                                  
+extends pug/base
+block content
+    header
+        include pug/header
+    main
+        section
+            include pug/top-image
+        section
+            include pug/discription-text
+        section
+            include pug/cards
+        section
+            include pug/price-button
+        section
+            include pug/form                
+    footer 
+        include pug/footer                                  

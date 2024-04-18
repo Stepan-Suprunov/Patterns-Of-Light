@@ -12765,18 +12765,6 @@ textarea.form-control-lg {
   }
 }
 
-body {
-  min-width: 320px;
-  font-family: "Montserrat";
-  background-color: #E3E3E3;
-}
-
-/*body {
-    background-color: $back;
-    color: $text;
-    user-select: none;
-}
-*/
 @font-face {
   font-family: "Montserrat";
   src: url(fonts/Montserrat-Regular..ttf), url(fonts/Montserrat-Regular..woff), url(fonts/Montserrat-Regular..eot);
@@ -12793,6 +12781,12 @@ body {
   font-family: "Montserrat Italic";
   src: url(fonts/Montserrat-Italic..ttf), url(fonts/Montserrat-Italic..woff), url(fonts/Montserrat-Italic..eot);
 }
+body {
+  min-width: 320px;
+  font-family: "Montserrat";
+  background-color: #E3E3E3;
+}
+
 header {
   background-color: white;
 }
