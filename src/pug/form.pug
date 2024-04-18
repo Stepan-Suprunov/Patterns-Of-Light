@@ -1,0 +1,46 @@
+.form
+    .container.background
+        .container-fluid
+            .container.content
+                .row
+                    .col.top-text.text-center Напишите нам!
+                .row 
+                    .col.form-1
+                        form(
+                        action='#'
+                        )
+                            .form-group 
+                                input(
+                                type="(text)",
+                                placeholder='Введите ваше имя',
+                                color='#FFFFFF',
+                                class='form-control',
+                                required
+                                )
+                .row 
+                    .col.form-2
+                        form(
+                        action='#'
+                        )
+                            .form-group 
+                                input(
+                                type="(text)",
+                                placeholder='Введите ваш телефон',
+                                class='form-control',
+                                required
+                                )
+                .row 
+                    .col.form-3
+                        form(
+                        action='#'
+                        )
+                            .form-group 
+                                input(
+                                type="(text)",
+                                placeholder='Напишите ваше сообщение здесь',
+                                class='form-control',
+                                required
+                                )
+                .row.button
+                    .col.form-button
+                        a.nav-link.active.text-center(href="#") Отправить сообщение

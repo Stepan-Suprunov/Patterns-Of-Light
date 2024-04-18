@@ -1,0 +1,46 @@
+.discription-text {
+    .container {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 700;
+        margin-top: 6rem;
+    }
+}
+
+@media (max-width: 1399px) {
+    .discription-text {
+        .container {
+            margin-top: 4rem;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .discription-text {
+        .container {
+            font-size: 18px;
+            line-height: 27px;
+            margin-top: 3rem;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .discription-text {
+        .container {
+            font-size: 15px;
+            line-height: 20px;
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .discription-text {
+        .container {
+            font-size: 12px;
+            line-height: 17px;
+            margin-top: 1.5rem;
+        }
+    }
+}

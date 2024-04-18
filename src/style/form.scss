@@ -1,0 +1,89 @@
+.form {
+    padding-top: 6rem;
+    .background {
+        background-color: #000000;
+        --bs-gutter-x: 0;
+        .container-fluid {
+            background-image: url('img/form_background.png');
+            .content {
+                max-width: 500px;
+                .top-text {
+                    color: #FFFFFF;
+                    font-family: 'Montserrat Bold';
+                    font-size: 50px;
+                    line-height: 26px;
+                    padding-top: 6rem;
+                    padding-bottom: 6rem;
+                } 
+                .form-1, .form-2, .form-3 {               
+                    .form-control {
+                        border: 0px;
+                        border-radius: 0px;
+                        background-color: hsla(0, 0%, 100%, 0.35);
+                        color: #FFFFFF;
+                        margin-bottom: 1rem;
+                        padding: 0.8rem;
+                    }
+                    ::placeholder {
+                        color:#FFFFFF;
+                        font-family: 'Montserrat';
+                        font-size: 16px;
+                    }
+                } 
+                .form-3 {
+                    .form-control {
+                        padding-bottom: 5rem;
+                    }
+                }
+                .form-button {
+                    background-color:#FFFFFF;
+                    font-family: 'Montserrat Bold';
+                    font-size: 20px;
+                    height: 3.5rem;
+                    padding-top: .7rem;
+                    margin: .75rem;
+                    transition: all .2s ease;
+                    &:hover {
+                    text-decoration: underline;
+                    font-size: 21px;
+                    transition: all .2s ease;
+                    }
+                } 
+                .button {
+                    padding-bottom: 5rem;
+                } 
+            }       
+        }
+    }
+}
+
+@media (max-width: 512px) {
+    .form {
+        padding-top: 5rem;
+        .background {
+            .container-fluid {
+                .content {
+                    .top-text {
+                        padding: 3rem 0 3rem 0;
+                        font-size: 32px;
+                    } 
+                    .form-1, .form-2, .form-3 {               
+                        ::placeholder {
+                            font-size: 13px;
+                        }
+                    } 
+                    .form-button {
+                        font-size: 16px;
+                        padding-top: 1rem;
+                        &:hover {
+                        font-size: 17px;
+                        }
+                    } 
+                    .button {
+                        padding-bottom: 2rem;
+                    } 
+                }       
+            }
+        }
+    }
+}
