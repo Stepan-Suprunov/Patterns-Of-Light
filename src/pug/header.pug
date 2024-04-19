@@ -12,21 +12,42 @@ header
                 )
                 span.navbar-toggler-icon
             .collapse.navbar-collapse(id="navbarSupportedContent")
-                ul.navbar-nav.mx-auto.mb-2.mb-lg-0
-                    li.nav-item 
+                ul.nav.navbar-nav.mx-auto.mb-2.mb-lg-0(
+                    id="myNav"
+                    role="tablist"
+                    )
+                    li.nav-item(
+                        role="presentation"
+                        )
                         a.nav-link.active(
-                        aria-current="page",
-                        href="#"
+                        id="first-button"
+                        data-toggle="tab"
+                        href="#first"
+                        role="tab"
+                        aria-controls="first"
+                        aria-selected="true"
                         ) НАШИ УСЛУГИ
-                    li.nav-item
-                        a.nav-link.active(
-                        aria-current="page",
-                        href="#"
+                    li.nav-item(
+                        role="presentation"
+                        )
+                        a.nav-link(
+                        id="second-button"
+                        data-toggle="tab"
+                        href="#second"
+                        role="tab"
+                        aria-controls="second"
+                        aria-selected="false"
                         ) ЦЕНЫ
-                    li.nav-item
-                        a.nav-link.active(
-                        aria-current="page",
-                        href="#"
+                    li.nav-item(
+                        role="presentation"
+                        )
+                        a.nav-link(
+                        id="third-button"
+                        data-toggle="tab"
+                        href="#third"
+                        role="tab"
+                        aria-controls="third"
+                        aria-selected="false"
                         ) КОНТАКТЫ
             .last 
                 p.navbar-brand +7 (499) 390-74-51
