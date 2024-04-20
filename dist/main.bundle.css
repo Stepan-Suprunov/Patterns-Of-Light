@@ -12804,6 +12804,10 @@ header .navbar .nav-item {
   font-size: 14px;
   transition: all 0.2s ease;
 }
+header .navbar .nav-item .active {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
 header .navbar .nav-item:hover {
   font-size: 15px;
   font-family: "Montserrat Bold";

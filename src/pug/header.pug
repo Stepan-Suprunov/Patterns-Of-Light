@@ -2,7 +2,9 @@ header
     nav.navbar.navbar-expand-lg.navbar-light 
         .container
             .first
-                a.navbar-brand(href="#") Узоры Света
+                a.navbar-brand(
+                href="./index.html"
+                ) Узоры Света
             button.navbar-toggler(
                 type="button", data-bs-toggle="collapse",
                 data-bs-target="#navbarSupportedContent",
@@ -12,42 +14,30 @@ header
                 )
                 span.navbar-toggler-icon
             .collapse.navbar-collapse(id="navbarSupportedContent")
-                ul.nav.navbar-nav.mx-auto.mb-2.mb-lg-0(
-                    id="myNav"
-                    role="tablist"
-                    )
-                    li.nav-item(
-                        role="presentation"
-                        )
-                        a.nav-link.active(
+                ul.nav.navbar-nav.mx-auto.mb-2.mb-lg-0
+                    li.nav-item.d-none
+                        button.nav-link.active(
+                        id="main-button-hidden"
+                        data-bs-toggle="tab"
+                        data-bs-target="#Main"
+                        ) Main
+                    li.nav-item
+                        button.nav-link(
                         id="first-button"
-                        data-toggle="tab"
-                        href="#first"
-                        role="tab"
-                        aria-controls="first"
-                        aria-selected="true"
+                        data-bs-toggle="tab"
+                        data-bs-target="#first"
                         ) НАШИ УСЛУГИ
-                    li.nav-item(
-                        role="presentation"
-                        )
-                        a.nav-link(
+                    li.nav-item
+                        button.nav-link(
                         id="second-button"
-                        data-toggle="tab"
-                        href="#second"
-                        role="tab"
-                        aria-controls="second"
-                        aria-selected="false"
+                        data-bs-toggle="tab"
+                        data-bs-target="#second"
                         ) ЦЕНЫ
-                    li.nav-item(
-                        role="presentation"
-                        )
-                        a.nav-link(
+                    li.nav-item
+                        button.nav-link(
                         id="third-button"
-                        data-toggle="tab"
-                        href="#third"
-                        role="tab"
-                        aria-controls="third"
-                        aria-selected="false"
+                        data-bs-toggle="tab"
+                        data-bs-target="#third"
                         ) КОНТАКТЫ
             .last 
                 p.navbar-brand +7 (499) 390-74-51
