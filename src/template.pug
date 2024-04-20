@@ -3,17 +3,34 @@ block content
     header
         include pug/header
     main
-        section 
-            include pug/multi-test
-        section
-            include pug/top-image
-        section
-            include pug/discription-text
-        section
-            include pug/cards
-        section
-            include pug/price-button
-        section
-            include pug/form                
+        .tab-content
+            .tab-pane.fade.show.active(
+                id="main-page"       
+                )
+                section
+                    include pug/top-image
+                section
+                    include pug/discription-text
+                section
+                    include pug/cards
+                section
+                    include pug/price-button
+                section
+                    include pug/form   
+            .tab-pane.fade(
+                id="our-services-page"
+                ) 
+                .container 
+                    p Lorem ipsum dolor sit amet. 
+            .tab-pane.fade(
+                id="prices-page"
+                )
+                .container 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, deleniti. 
+            .tab-pane.fade(
+                id="contacts-page"
+                )
+                .container 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus velit dolores debitis illum, eligendi totam.           
     footer 
         include pug/footer                                  
