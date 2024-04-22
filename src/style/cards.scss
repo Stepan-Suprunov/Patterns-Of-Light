@@ -3,7 +3,7 @@
     .container {
         max-width: 1140px;
         .card {
-            margin: 2rem auto;
+            margin: 2rem 0 2rem 0 auto;
             width: 22rem;
             border-radius: 0;
             img {
@@ -34,7 +34,7 @@
         .container {
             max-width: 990px;
             .card {
-                margin: 1rem auto;
+                margin: 1rem 0 1rem 0 auto;
                 width: 19rem;
                 .card-body {
                     height: 4rem;
@@ -57,7 +57,6 @@
         .container {
             max-width: 840px;
             .card {
-                margin: 1rem auto;
                 width: 16rem;
                 .card-body {
                     height: 4rem;
@@ -80,7 +79,6 @@
         .container {
             max-width: 720px;
             .card {
-                margin: 1rem auto;
                 width: 13.5rem;
                 .card-body {
                     height: 3.5rem;
@@ -124,7 +122,6 @@
     .cards {
         .container {
             .card {
-                margin: 1rem auto;
                 width: 18rem;
                 .card-body {
                     height: 4rem;
