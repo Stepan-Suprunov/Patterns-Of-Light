@@ -1,5 +1,4 @@
 .form {
-    padding-top: 6rem;
     .background {
         background-color: #000000;
         --bs-gutter-x: 0;
@@ -59,7 +58,6 @@
 
 @media (max-width: 512px) {
     .form {
-        padding-top: 5rem;
         .background {
             .container-fluid {
                 .content {
