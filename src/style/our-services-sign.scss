@@ -1,0 +1,12 @@
+.our-services-sign {
+    padding-top: 50px;
+    font-family: "Montserrat Bold";
+    font-size: 50px;
+}
+
+@media (max-width: 512px) {
+    .our-services-sign {
+        padding-top: 20px;
+        font-size: 40px;
+    }    
+}
