@@ -1,7 +1,9 @@
 nav.navbar.navbar-expand-lg.navbar-light 
     .container
         .first
-            a.navbar-brand(href="#") Узоры Света
+            a.navbar-brand(
+            href="./index.html"
+            ) Узоры Света
         button.navbar-toggler(
             type="button", data-bs-toggle="collapse",
             data-bs-target="#navbarSupportedContent",
@@ -11,21 +13,30 @@ nav.navbar.navbar-expand-lg.navbar-light
             )
             span.navbar-toggler-icon
         .collapse.navbar-collapse(id="navbarSupportedContent")
-            ul.navbar-nav.mx-auto.mb-2.mb-lg-0
-                li.nav-item 
-                    a.nav-link.active(
-                    aria-current="page",
-                    href="#"
+            ul.nav.navbar-nav.mx-auto.mb-2.mb-lg-0
+                li.nav-item.d-none
+                    button.nav-link(
+                    id="main-button-hidden"
+                    data-bs-toggle="tab"
+                    data-bs-target="#main-page"
+                    ) Main
+                li.nav-item
+                    button.nav-link.active(
+                    id="our-services-button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#our-services-page"
                     ) НАШИ УСЛУГИ
                 li.nav-item
-                    a.nav-link.active(
-                    aria-current="page",
-                    href="#"
+                    button.nav-link(
+                    id="prices-button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#prices-page"
                     ) ЦЕНЫ
                 li.nav-item
-                    a.nav-link.active(
-                    aria-current="page",
-                    href="#"
+                    button.nav-link(
+                    id="contacts-button"
+                    data-bs-toggle="tab"
+                    data-bs-target="#contacts-page"
                     ) КОНТАКТЫ
         .last 
             p.navbar-brand +7 (499) 390-74-51
