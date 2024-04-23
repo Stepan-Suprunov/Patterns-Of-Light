@@ -39,7 +39,37 @@
         }
     }
     .list {
-        background-color: aqua;
+        .container {
+            h1 {
+                font-family: 'Montserrat Bold';
+                font-size: 50px;
+            }
+            .table {
+                td {
+                    background-color: $back;
+                    font-size: 16px;
+                    line-height: 49px;
+                    font-weight: 600;
+                    .colortext {
+                        color: #C33030;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+    .price-list {
+        .list {
+            .container {
+                .table {
+                    td {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -48,6 +78,19 @@
         .discount {
             .container{
                 padding: 2rem;
+                .form-button {
+                    margin: 0rem 0.75rem 17rem 0.75rem;
+                }
+            }
+        }
+        .list {
+            .container {
+                .table {
+                    td {
+                        font-size: 11px;
+                        line-height: 45px;
+                    }
+                }
             }
         }
     }
@@ -63,6 +106,48 @@
                 }
                 .form-button {
                     margin: 0rem 0.75rem 0.9rem 0.75rem;
+                }
+            }
+        }
+        .list {
+            .container {
+                .table {
+                    td {
+                        font-size: 15px;
+                        line-height: 45px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .price-list {
+        .list {
+            .container {
+                h1 {
+                    font-size: 28px;
+                }
+                .table {
+                    td {
+                        font-size: 11px;
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .price-list {
+        .list {
+            .container {
+                .table {
+                    td {
+                        line-height: 30px;
+                    }
                 }
             }
         }
