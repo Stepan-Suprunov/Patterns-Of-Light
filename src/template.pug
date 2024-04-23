@@ -4,7 +4,7 @@ block content
         include pug/header
     main
         .tab-content
-            .tab-pane.fade(
+            .tab-pane.fade.show.active(
                 id="main-page"       
                 )
                 section
@@ -47,9 +47,11 @@ block content
                     include pug/price-button
                 section
                     include pug/form
-            .tab-pane.fade.show.active(
+            .tab-pane.fade(
                 id="contacts-page"
                 )
+                section
+                    include pug/contacts-map
                 section
                     include pug/form
     footer 
